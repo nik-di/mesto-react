@@ -1,0 +1,9 @@
+@import url('./_active/error-message_active.css');
+
+.error-message {
+    color: #FF3333;
+    font-size: 0.8em;
+    transition: .3s;
+    padding: 0px;
+    opacity: 0;
+}

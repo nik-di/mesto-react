@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+@import url(../blocks/root/root.css);
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/user-info/user-info.css);
+@import url(../blocks/button/button.css);
+@import url(../blocks/places-list/places-list.css);
+
+body {
+  background-color: #000;
+}
