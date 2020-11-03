@@ -3,7 +3,8 @@ import './popup/popup.css';
 import closeIcon from '../../images/icon-close.svg';
 
 function PopupWithForm({ handleClosePopup, title, popupName, children }) {
-    function closeHandler({ target, currentTarget, keyCode }) {
+
+    const closeHandler = ({ target, currentTarget, keyCode }) => {
         if (target.classList.contains('popup-close') || (target === currentTarget)) {
             handleClosePopup();
         };

@@ -62,6 +62,26 @@ class Api {
             });
     }
 
+    updateUserAvatar(avatar) {
+
+        return fetch(`${this.url}/users/me/avatar`, {
+            method: 'PATCH',
+            headers: {
+                authorization: this.token,
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                avatar
+            }),
+        })
+
+            .then(this._getPromiseRes)
+
+            .catch((err) => {
+                console.error(err);
+            });
+    }
+
     postCard(name, link) {
 
         return fetch(`${this.url}/cards`, {
@@ -74,6 +94,36 @@ class Api {
                 name,
                 link,
             }),
+        })
+
+            .then(this._getPromiseRes)
+
+            .catch((err) => {
+                console.error(err);
+            });
+    }
+
+    deleteCard(cardId) {
+        return fetch(`${this.url}/cards/${cardId}`, {
+            method: 'DELETE',
+            headers: {
+                authorization: this.token
+            }
+        })
+
+            .then(this._getPromiseRes)
+
+            .catch((err) => {
+                console.error(err);
+            });
+    }
+
+    updateLike(cardId, isLikedNow) {
+        return fetch(`${this.url}/cards/like/${cardId}`, {
+            method: isLikedNow ? 'DELETE' : 'PUT',
+            headers: {
+                authorization: this.token
+            }
         })
 
             .then(this._getPromiseRes)

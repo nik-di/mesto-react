@@ -2,9 +2,12 @@
 
 ["Mesto" на GH-pages](https://nik-di.github.io/mesto-react/index.html)
 
-<img src="https://img.shields.io/static/v1?label=ver&message=0.1.0&color=brightgreen">
+<img src="https://img.shields.io/static/v1?label=ver&message=0.2.0&color=brightgreen">
 <img src="https://img.shields.io/static/v1?label=React&message=16.14.0&color=blue">
-<img src="https://img.shields.io/static/v1?label=build-size&message=595Kb&color=informational">
+<img src="https://img.shields.io/static/v1?label=build-size&message=605Kb&color=informational">
+
+``` Если кто-то заметил, что всё сразу заливается в мастер да ещё и без атомарных коммитов - то не обращайте внимание, это редкое исключение и в коммерческой разработке такого не будет``` 	
+&#128527;
 
 #### Установка
 ##### Git command:
