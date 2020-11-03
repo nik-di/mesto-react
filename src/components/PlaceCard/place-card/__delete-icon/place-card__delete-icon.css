@@ -8,9 +8,26 @@
   top: 18px;
   right: 15px;
   cursor: pointer;
-  display: block; /* none */
+  display: none;
+  z-index: 1;
 }
 
-/* .place-card:hover .place-card__delete-icon {
+.place-card:hover > .place-card__delete-icon {
   display: block;
-} */
+}
+
+.place-card:hover > .place-card__delete-icon:disabled:hover::after {
+  content: 'Это не ваша карточка. Вы не можете её удалить...';
+  display: block;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 4px #232323bd;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 70px;
+  color: black;
+  z-index: 1;
+}
